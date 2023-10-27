@@ -1,0 +1,24 @@
+<h2>Sites</h2>
+  
+    <table class="table container">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">site Owner</th>
+            <th scope="col">Installation Date</th>
+            <th scope="col">Grievance</th>
+            <th scope="col">Phone</th>
+            <th scope="col">City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let site of sites">
+            <td>{{ site.name}}</td>
+            <td>{{site.owner_name}}</td>
+            <td> {{site.InstallationDate | date}}</td>
+           <td>{{site.grievance}}</td> 
+            <td>{{site.phone}}</td>
+            <td>{{site.city}}</td>
+          </tr>
+        </tbody>
+      </table>

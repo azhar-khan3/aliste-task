@@ -1,0 +1,33 @@
+<h2>Electricians</h2>
+<!-- <ul>
+  <li *ngFor="let electrician of electricians">
+
+    {{ electrician.name }}
+    {{electrician.phoneNumber}}
+    {{electrician.zone}}
+  </li>
+</ul> -->
+
+
+
+<table class="table container">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Zone</th>
+        <th scope="col">Grievance</th>
+
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let electrician of electricians">
+        <td>{{ electrician.name }}</td>
+        <td>{{electrician.phoneNumber}}</td>
+        <td>{{electrician.zone}}</td>
+        <td>{{electrician.grievanceElectrician}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
